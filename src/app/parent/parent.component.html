@@ -1,0 +1,8 @@
+<div>
+    <h1>Parent Component (Change Detection: Default)</h1>
+    <button (click)="updateParentData()">Update Parent Data</button>
+    <p>{{ parentData }}</p>
+  
+    <!-- Passing parentData to child component -->
+    <app-child [childData]="parentData"></app-child>
+  </div>
